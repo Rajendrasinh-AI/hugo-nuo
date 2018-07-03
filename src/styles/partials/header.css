@@ -7,9 +7,10 @@
   box-shadow: 0 1px 4px var(--box-shadow-darker);
   transition: all var(--easing) var(--speed);
 
-  &:hover {
+  /* Remove rotation from main logo */
+  /* &:hover {
     transform: rotate(180deg);
-  }
+  } */
 
   @media screen and (max-width: 800px) {
     position: absolute;
