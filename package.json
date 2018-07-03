@@ -13,7 +13,7 @@
   "scripts": {
     "start": "yarn clean && yarn build",
     "dev": "cross-env NODE_ENV=development webpack -w -d --bail",
-    "build": "cross-env NODE_ENV=production webpack -p --bail",
+    "build": "yarn clean && cross-env NODE_ENV=production webpack -p --bail",
     "eslint": "eslint src webpack.config.js --cache && exit 0",
     "eslint:fix": "eslint src webpack.config.js --cache --fix && exit 0",
     "stylelint": "stylelint 'src/**/*.css' && exit 0",
